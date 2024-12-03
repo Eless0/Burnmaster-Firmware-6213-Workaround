@@ -3270,12 +3270,12 @@ uint8_t gbaMenu() {
           // 1M FLASH
           idFlash_GBA();
           resetFLASH_GBA();
-          if (strcmp(flashid, "C209") != 0) 
+          /*if (strcmp(flashid, "C209") != 0) 
           {
             OledShowString(0,3,"Flashrom Type \n not supported!",8);
             sprintf(tmsg,"ID: %s",flashid);
             print_Error(tmsg, true);
-          }
+          }*/
           eraseFLASH_GBA();
           // 131072 bytes are divided into two 65536 byte banks
           switchBank_GBA(0x0);
